@@ -27,7 +27,7 @@ const Contact = () => {
     try {
       // Préparer les données du message
       const messageData = {
-        to: 'noahwski@gmail.com',
+        to: 'Noahwski@gmail.com',
         from: formData.email,
         subject: `Nouveau message de ${formData.nom} - Portfolio Noah`,
         text: `
@@ -46,7 +46,7 @@ const Contact = () => {
       };
 
       // Envoyer l'email via mailto (solution temporaire)
-      const mailtoLink = `mailto:noahwski@gmail.com?subject=${encodeURIComponent(messageData.subject)}&body=${encodeURIComponent(messageData.text)}`;
+      const mailtoLink = `mailto:${encodeURIComponent(messageData.to)}?subject=${encodeURIComponent(messageData.subject)}&body=${encodeURIComponent(messageData.text)}`;
       window.open(mailtoLink, '_blank');
       
       setIsSubmitting(false);

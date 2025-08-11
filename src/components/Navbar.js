@@ -26,11 +26,15 @@ const Navbar = () => {
   };
 
   const handleDownloadCV = () => {
-    // Placeholder pour le téléchargement du CV
     const link = document.createElement('a');
-    link.href = '/cv-noah-wojciechowski.pdf'; // À remplacer par le vrai fichier
+    // Utiliser le fichier placé dans /public/assets
+    link.href = '/assets/CV%20NOAH%20WOJCIECHOWSKI.pdf';
     link.download = 'CV-Noah-Wojciechowski.pdf';
+    link.rel = 'noopener noreferrer';
+    link.target = '_blank';
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   return (
