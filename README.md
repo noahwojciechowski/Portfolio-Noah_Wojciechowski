@@ -114,14 +114,6 @@ Le site est entièrement responsive et optimisé pour :
 - Interfaces WPF
 - Drone programmé avec Python
 
-## 📞 Contact
-
-- **Email** : Noahwski@gmail.com
-- **Téléphone** : 07 68 64 11 65
-- **Adresse** : 31 Rue Philippe Noiret, 44220 Couëron
-- **GitHub** : [NoahWojciechowski](https://github.com/NoahWojciechowski)
-- **LinkedIn** : [noah-wojciechowski](https://linkedin.com/in/noah-wojciechowski)
-
 ## 📄 Licence
 
 © 2025 Noah Wojciechowski - Tous droits réservés
