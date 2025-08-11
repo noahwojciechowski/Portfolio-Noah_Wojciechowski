@@ -1,68 +1,8 @@
-import React, { useState } from 'react';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaUser, FaComment } from 'react-icons/fa';
+import React from 'react';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    nom: '',
-    email: '',
-    message: ''
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      // Préparer les données du message
-      const messageData = {
-        to: 'Noahwski@gmail.com',
-        from: formData.email,
-        subject: `Nouveau message de ${formData.nom} - Portfolio Noah`,
-        text: `
-          Nom: ${formData.nom}
-          Email: ${formData.email}
-          
-          Message:
-          ${formData.message}
-        `,
-        html: `
-          <h3>Nouveau message de ${formData.nom}</h3>
-          <p><strong>Email:</strong> ${formData.email}</p>
-          <p><strong>Message:</strong></p>
-          <p>${formData.message.replace(/\n/g, '<br>')}</p>
-        `
-      };
-
-      // Envoyer l'email via mailto (solution temporaire)
-      const mailtoLink = `mailto:${encodeURIComponent(messageData.to)}?subject=${encodeURIComponent(messageData.subject)}&body=${encodeURIComponent(messageData.text)}`;
-      window.open(mailtoLink, '_blank');
-      
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ nom: '', email: '', message: '' });
-      
-      // Reset status after 3 seconds
-      setTimeout(() => setSubmitStatus(null), 3000);
-    } catch (error) {
-      console.error('Erreur lors de l\'envoi:', error);
-      setIsSubmitting(false);
-      setSubmitStatus('error');
-      setTimeout(() => setSubmitStatus(null), 3000);
-    }
-  };
-
   const contactInfo = [
     {
       icon: <FaEnvelope />,
@@ -128,82 +68,18 @@ const Contact = () => {
           </div>
 
           <div className="contact-form-container" data-aos="fade-left" data-aos-delay="150">
-            <h3>Envoyez-moi un message</h3>
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label htmlFor="nom">
-                  <FaUser /> Nom complet *
-                </label>
-                <input
-                  type="text"
-                  id="nom"
-                  name="nom"
-                  value={formData.nom}
-                  onChange={handleInputChange}
-                  required
-                  placeholder="Votre nom complet"
-                />
+            <h3>Me contacter directement</h3>
+            <div className="contact-direct-card">
+              <div className="direct-row">
+                <FaEnvelope />
+                <a href="mailto:Noahwski@gmail.com" className="direct-link">Noahwski@gmail.com</a>
               </div>
-
-              <div className="form-group">
-                <label htmlFor="email">
-                  <FaEnvelope /> Email *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                  placeholder="votre.email@exemple.com"
-                />
+              <div className="direct-row">
+                <FaPhone />
+                <a href="tel:0768641165" className="direct-link">07 68 64 11 65</a>
               </div>
-
-              <div className="form-group">
-                <label htmlFor="message">
-                  <FaComment /> Message *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                  placeholder="Votre message..."
-                  rows="5"
-                ></textarea>
-              </div>
-
-              <button 
-                type="submit" 
-                className="submit-button"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? (
-                  <>
-                    <div className="spinner"></div>
-                    Envoi en cours...
-                  </>
-                ) : (
-                  <>
-                    <FaPaperPlane />
-                    Envoyer le message
-                  </>
-                )}
-              </button>
-
-              {submitStatus === 'success' && (
-                <div className="success-message">
-                  Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.
-                </div>
-              )}
-              {submitStatus === 'error' && (
-                <div className="error-message">
-                  Erreur lors de l'envoi. Veuillez réessayer ou me contacter directement par email.
-                </div>
-              )}
-            </form>
+              <p className="direct-hint">Cliquez pour ouvrir votre application d'email ou passer un appel.</p>
+            </div>
           </div>
         </div>
 
@@ -217,6 +93,9 @@ const Contact = () => {
             <div className="cta-buttons">
               <a href="mailto:Noahwski@gmail.com" className="cta-button primary">
                 <FaEnvelope /> Envoyer un email
+              </a>
+              <a href="tel:0768641165" className="cta-button secondary">
+                <FaPhone /> Appeler
               </a>
             </div>
           </div>

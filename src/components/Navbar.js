@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { FaDownload, FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
+import cvFile from '../assets/CV_NOAH_WOJCIECHOWSKI.pdf';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,11 +28,8 @@ const Navbar = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    // Utiliser le fichier placé dans /public/assets
-    link.href = '/assets/CV%20NOAH%20WOJCIECHOWSKI.pdf';
+    link.href = cvFile;
     link.download = 'CV-Noah-Wojciechowski.pdf';
-    link.rel = 'noopener noreferrer';
-    link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

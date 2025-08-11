@@ -292,6 +292,36 @@
   transform: translateY(-2px);
 }
 
+/* Direct contact card */
+.contact-direct-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.direct-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.direct-link {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.direct-link:hover {
+  text-decoration: underline;
+}
+
+.direct-hint {
+  color: #bdc3c7;
+  margin-top: 10px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact {
