@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Portfolio Noah Wojciechowski
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio personnel de Noah Wojciechowski, étudiant en Bachelor CDA (Concepteur Développeur d'Applications) à La Joliverie.
 
-## Available Scripts
+## 🚀 À propos
 
-In the project directory, you can run:
+Ce portfolio présente mon parcours académique, mes compétences techniques et mes projets en développement web. Je suis passionné par le développement web, l'informatique, les réseaux et la cybersécurité.
 
-### `npm start`
+## 🎯 Profil
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Nom** : Noah Wojciechowski
+- **Formation** : Bachelor CDA (Concepteur Développeur d'Applications) - La Joliverie (2025-2026)
+- **Précédent** : BTS CIEL (2023-2025) - St-Félix La Salle, Nantes
+- **Recherche** : Alternance à partir de septembre 2025
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies utilisées
 
-### `npm test`
+- **Frontend** : React.js, HTML5, CSS3, JavaScript
+- **Backend** : Node.js, PHP, Symfony
+- **Bases de données** : MySQL
+- **Autres** : Python, Java, VirtualBox, Windows Server, Linux (Debian, Ubuntu, Kali)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Structure du projet
 
-### `npm run build`
+```
+src/
+├── components/
+│   ├── Navbar.js          # Navigation principale
+│   ├── Hero.js            # Section d'accueil
+│   ├── Competences.js     # Compétences techniques
+│   ├── Projets.js         # Projets réalisés
+│   ├── Parcours.js        # Parcours scolaire et expériences
+│   ├── Contact.js         # Formulaire de contact
+│   └── Footer.js          # Pied de page
+├── App.js                 # Composant principal
+└── App.css               # Styles globaux
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🎨 Fonctionnalités
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Navigation
+- Menu responsive avec navigation fluide
+- Bouton de téléchargement du CV
+- Navigation mobile avec hamburger menu
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Sections
+1. **Accueil** : Présentation personnelle avec photo de profil
+2. **Compétences** : Technologies maîtrisées organisées par catégories
+3. **Projets** : Réalisations techniques avec liens GitHub
+4. **Parcours** : Formation et expériences professionnelles
+5. **Contact** : Formulaire de contact et coordonnées
 
-### `npm run eject`
+### Design
+- Design moderne et sobre
+- Responsive design (mobile-first)
+- Animations fluides et transitions
+- Palette de couleurs cohérente (bleu/gris)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Installation et démarrage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Cloner le projet**
+   ```bash
+   git clone [url-du-repo]
+   cd portfolio-noah
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Installer les dépendances**
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Démarrer le serveur de développement**
+   ```bash
+   npm start
+   ```
 
-## Learn More
+4. **Ouvrir dans le navigateur**
+   ```
+   http://localhost:3000
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📦 Scripts disponibles
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `npm start` : Démarre le serveur de développement
+- `npm build` : Crée une version de production
+- `npm test` : Lance les tests
+- `npm eject` : Éjecte la configuration (irréversible)
 
-### Code Splitting
+## 📱 Responsive Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Le site est entièrement responsive et optimisé pour :
+- **Desktop** : 1200px et plus
+- **Tablet** : 768px - 1199px
+- **Mobile** : 320px - 767px
 
-### Analyzing the Bundle Size
+## 🎯 Compétences techniques
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Langages & Frameworks
+- HTML, CSS, JavaScript
+- Python, Java, PHP
+- React, Node.js, Symfony
 
-### Making a Progressive Web App
+### SGBD
+- MySQL
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Réseaux / OS / Outils
+- VirtualBox, Windows Server 2016
+- Debian, Ubuntu, Kali Linux
+- Configuration réseau, GPO, scripts
 
-### Advanced Configuration
+### Autres
+- Création de bases de données web
+- Chatbot IA (cybersécurité)
+- Interfaces WPF
+- Drone programmé avec Python
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📞 Contact
 
-### Deployment
+- **Email** : Noahwski@gmail.com
+- **Téléphone** : 07 68 64 11 65
+- **Adresse** : 31 Rue Philippe Noiret, 44220 Couëron
+- **GitHub** : [NoahWojciechowski](https://github.com/NoahWojciechowski)
+- **LinkedIn** : [noah-wojciechowski](https://linkedin.com/in/noah-wojciechowski)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📄 Licence
 
-### `npm run build` fails to minify
+© 2025 Noah Wojciechowski - Tous droits réservés
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+*Développé avec ❤️ en React.js*

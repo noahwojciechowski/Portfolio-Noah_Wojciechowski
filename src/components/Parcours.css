@@ -1,0 +1,370 @@
+.parcours {
+  padding: 80px 0;
+  background: #eef2f6;
+}
+
+.parcours-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.parcours-content {
+  margin-top: 60px;
+}
+
+.parcours-section {
+  margin-bottom: 60px;
+}
+
+.parcours-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.section-icon {
+  color: #3498db;
+  font-size: 1.5rem;
+}
+
+/* Timeline styles */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06), 0 2px 4px rgba(16, 24, 40, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid rgba(16, 24, 40, 0.06);
+}
+
+.timeline-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(16, 24, 40, 0.12);
+  border-color: rgba(16, 24, 40, 0.12);
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -37px;
+  top: 25px;
+  width: 40px;
+  height: 40px;
+  background: #3498db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+.timeline-content {
+  margin-left: 20px;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.formation-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+}
+
+.formation-periode {
+  background: #3498db;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.formation-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.formation-ecole {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #7f8c8d;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.formation-statut {
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.formation-statut.titulaire {
+  background: #27ae60;
+  color: white;
+}
+
+.formation-statut.admis {
+  background: #f39c12;
+  color: white;
+}
+
+.formation-description {
+  color: #5a6c7d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Experiences styles */
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.experience-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06), 0 2px 4px rgba(16, 24, 40, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border-left: 4px solid #3498db;
+  border: 1px solid rgba(16, 24, 40, 0.06);
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(16, 24, 40, 0.12);
+  border-color: rgba(16, 24, 40, 0.12);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.experience-poste {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+  flex: 1;
+}
+
+.experience-periode {
+  background: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.experience-entreprise {
+  color: #3498db;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+
+.experience-description {
+  color: #5a6c7d;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.experience-competences h6 {
+  color: #2c3e50;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.competences-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.competence-tag {
+  background: #ecf0f1;
+  color: #2c3e50;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.competence-tag:hover {
+  background: #3498db;
+  color: white;
+}
+
+/* CTA section */
+.parcours-cta {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  margin-top: 60px;
+  color: white;
+}
+
+.cta-content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  color: #3498db;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  color: #2980b9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .parcours {
+    padding: 60px 0;
+  }
+
+  .parcours-container {
+    padding: 0 15px;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-marker {
+    left: -27px;
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .formation-periode {
+    align-self: flex-start;
+  }
+
+  .experiences-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-periode {
+    align-self: flex-start;
+  }
+
+  .parcours-cta {
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+
+  .cta-content h4 {
+    font-size: 1.3rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    padding: 20px;
+  }
+
+  .formation-title {
+    font-size: 1.1rem;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+
+  .experience-poste {
+    font-size: 1.1rem;
+  }
+}
