@@ -12,8 +12,8 @@
 
 .contact-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1fr;
+  gap: 0;
   margin-top: 60px;
 }
 
@@ -293,34 +293,7 @@
 }
 
 /* Direct contact card */
-.contact-direct-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-}
-
-.direct-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 1.1rem;
-  margin-bottom: 16px;
-}
-
-.direct-link {
-  color: #ecf0f1;
-  text-decoration: none;
-}
-
-.direct-link:hover {
-  text-decoration: underline;
-}
-
-.direct-hint {
-  color: #bdc3c7;
-  margin-top: 10px;
-}
+/* removed direct contact card styles */
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -334,7 +307,7 @@
 
   .contact-content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
   }
 
   .contact-item {

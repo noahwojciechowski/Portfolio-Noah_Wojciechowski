@@ -28,7 +28,9 @@ const Navbar = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = cvFile;
+    // En prod (Vercel), servez le PDF depuis /public pour éviter les rewrites SPA
+    const publicCvPath = '/CV_NOAH_WOJCIECHOWSKI.pdf';
+    link.href = process.env.NODE_ENV === 'production' ? publicCvPath : cvFile;
     link.download = 'CV-Noah-Wojciechowski.pdf';
     document.body.appendChild(link);
     link.click();

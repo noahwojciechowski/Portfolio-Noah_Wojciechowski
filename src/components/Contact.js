@@ -66,40 +66,9 @@ const Contact = () => {
               </p>
             </div>
           </div>
-
-          <div className="contact-form-container" data-aos="fade-left" data-aos-delay="150">
-            <h3>Me contacter directement</h3>
-            <div className="contact-direct-card">
-              <div className="direct-row">
-                <FaEnvelope />
-                <a href="mailto:Noahwski@gmail.com" className="direct-link">Noahwski@gmail.com</a>
-              </div>
-              <div className="direct-row">
-                <FaPhone />
-                <a href="tel:0768641165" className="direct-link">07 68 64 11 65</a>
-              </div>
-              <p className="direct-hint">Cliquez pour ouvrir votre application d'email ou passer un appel.</p>
-            </div>
-          </div>
         </div>
 
-        <div className="contact-cta" data-aos="fade-up" data-aos-delay="200">
-          <div className="cta-content">
-            <h4>Prêt à collaborer ?</h4>
-            <p>
-              Que ce soit pour une alternance, un projet freelance ou simplement pour échanger 
-              sur le développement web et la cybersécurité, je suis toujours ouvert aux nouvelles opportunités.
-            </p>
-            <div className="cta-buttons">
-              <a href="mailto:Noahwski@gmail.com" className="cta-button primary">
-                <FaEnvelope /> Envoyer un email
-              </a>
-              <a href="tel:0768641165" className="cta-button secondary">
-                <FaPhone /> Appeler
-              </a>
-            </div>
-          </div>
-        </div>
+        {/* CTA section removed as requested */}
       </div>
     </section>
   );
