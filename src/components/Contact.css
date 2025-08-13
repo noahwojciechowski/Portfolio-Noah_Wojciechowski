@@ -97,6 +97,27 @@
   color: #bdc3c7;
 }
 
+/* Mobility note */
+.mobility-note {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border-left: 4px solid #95a5a6;
+}
+
+.mobility-note h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ecf0f1;
+  font-weight: 600;
+}
+
+.mobility-note p {
+  line-height: 1.6;
+  color: #d0d6db;
+}
+
 /* Contact Form Styles */
 .contact-form-container h3 {
   font-size: 1.8rem;

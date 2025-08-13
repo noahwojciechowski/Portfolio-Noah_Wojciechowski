@@ -58,6 +58,14 @@ const Contact = () => {
               ))}
             </div>
 
+            <div className="mobility-note">
+              <h4>Mobilité</h4>
+              <p>
+                Je n'ai pas le permis de conduire, mais je peux me déplacer facilement en
+                transports en commun (bus, tramway, TER).
+              </p>
+            </div>
+
             <div className="contact-availability">
               <h4>Disponibilité</h4>
               <p>

@@ -69,7 +69,7 @@ const Parcours = () => {
 
         <div className="parcours-content">
           <div className="parcours-section">
-            <h3 className="section-subtitle">
+            <h3 className="section-subtitle formation-heading">
               <FaGraduationCap className="section-icon" />
               Formation
             </h3>
@@ -105,7 +105,7 @@ const Parcours = () => {
           </div>
 
           <div className="parcours-section">
-            <h3 className="section-subtitle">
+            <h3 className="section-subtitle experiences-heading">
               <FaBriefcase className="section-icon" />
               Expériences Professionnelles
             </h3>
