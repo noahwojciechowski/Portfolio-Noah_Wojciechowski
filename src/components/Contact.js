@@ -62,7 +62,7 @@ const Contact = () => {
               <h4>Mobilité</h4>
               <p>
                 Je n'ai pas le permis de conduire, mais je peux me déplacer facilement en
-                transports en commun (bus, tramway, TER).
+                transports en commun (Bus, Tramway, TER).
               </p>
             </div>
 
